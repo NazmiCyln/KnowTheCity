@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalOyunActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtToplamPuanS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplam Puan:0/100"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="18dp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/txtSureS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:00"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="19dp"/>
+
+        <TextView
+            android:id="@+id/txtBilgiS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="6 Harfli İl"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtIlS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="_ _ _ _ _ _"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtTahminS"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:hint="Tahmin Girin"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="0dp">
+
+            <Button
+                android:id="@+id/btnHarfAlS"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:onClick="btnHarfAlS"
+                android:text="Harf Al"
+                android:textSize="18dp"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/btnTahminEtS"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:onClick="btnTahminEtS"
+                android:text="Tahmit Et"
+                android:textSize="18dp"
+                tools:ignore="OnClick" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
